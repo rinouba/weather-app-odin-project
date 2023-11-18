@@ -1,0 +1,124 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --background-color: #00A9FF;
+  --color1: #89CFF3;
+  --color2: #A0E9FF;
+  --color3: #CDF5FD;
+}
+
+body{
+  background-color: var(--background-color);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* nav */
+
+nav{
+  background-color: var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav h1{
+  margin-left: 10px ;
+  font-size: 3rem;
+  color: var(--background-color);
+}
+
+nav img{
+  width: 100px;
+  height: 100px;
+}
+
+/* container */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#info{
+  width: 100%;
+}
+
+/* form */
+
+form{
+  width: 100%;
+}
+
+form input{
+  width: 100%;
+  margin: 10px 0;
+}
+
+form input[type="text"]{
+  all: unset;
+  width: 100%;
+  background-color: var(--color2);
+  height: 50px;
+  color: var(--background-color);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form input[type="button"]{
+  all: unset;
+  border: 2px solid var(--color3);
+  width: 60%;
+  margin-top: 20px;
+  padding: 5px;
+  cursor: pointer;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--color1);
+  border-radius: 25px 0 25px 0;
+  transition: 0.5s;
+}
+
+form input[type="button"]:hover{
+  border-radius: 0 25px 0 25px;
+  box-shadow: 0px 0px 50px;
+}
+
+/* card */
+
+.card{
+  background-color: var(--color3);
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 13px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.card h1{
+  color: var(--color1);
+  margin: 20px;
+  font-size: 2.5rem;
+}
+
+.card h3{
+  color: var(--background-color);
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.card h5{
+  font-size: 1rem;
+  margin: 5px;
+}
