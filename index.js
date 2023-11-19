@@ -3,11 +3,12 @@ const search = document.querySelector('#search')
 const inputSearch = document.querySelector("#inputSearch")
 
 const getWeatherData = async (qry) => {
-  let url = `http://api.weatherapi.com/v1/current.json?key=9a4088b3115c4912890160727231711&q=${qry}`
+  let key = "9a4088b3115c4912890160727231711"
+  let url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${qry}`
   try{
     const res = await fetch(url,{ mode: "cors" })
     const body = await res.json()
-    info.innerHTML = 
+     info.innerHTML = 
     `
     <div class="card">
         <h1>${body.location.name}</h1>
