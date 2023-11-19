@@ -4,7 +4,7 @@ const inputSearch = document.querySelector("#inputSearch")
 
 const getWeatherData = async (qry) => {
   let key = "9a4088b3115c4912890160727231711"
-  let url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${qry}`
+  let url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${qry}`
   try{
     const res = await fetch(url,{ mode: "cors" })
     const body = await res.json()
